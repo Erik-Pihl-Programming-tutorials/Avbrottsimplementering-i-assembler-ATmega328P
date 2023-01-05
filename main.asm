@@ -11,18 +11,19 @@
 ;*           .CSEG (Code segment): Programminnet, här lagras programkoden.
 ;*
 ;*           Assemblerinstruktioner:
-;*           RJMP (Relative jump)  : Hoppar till angiven adress.
-;*           LDI (Load immediage)  : Läser in en konstant i ett CPU-register.
-;*           OUT                   : Skriver till ett I/O-register såsom PORTB.
-;*           IN                    : Läser från ett I/O-register såsom PINB.
-;*           ANDI (And immediate)  : Bitvis multiplikation med en konstant.
-;*           SEI (Set Interrupt)   : Ettställer I-flaggan i statusregister SREG
-;*                                   för att aktivera avbrott globalt.
-;*           BREQ (Branch if equal): Genomför hopp till angiven adress om
-;*                                   resultatet från föregående aritmetiska
-;*                                   eller logiska operation blev noll.
-;*                                   Detta indikeras via Z-flaggan (Zero) i
-;*                                   statusregistret SREG, som då blir ettställd.
+;*           RJMP (Relative jump)    : Hoppar till angiven adress.
+;*           LDI (Load immediate)    : Läser in en konstant i ett CPU-register.
+;*           OUT (Store to I/O)      : Skriver till ett I/O-register såsom PORTB.
+;*           IN (Load from I/O)      : Läser från ett I/O-register såsom PINB.
+;*           STS (Store to dataspace): Skriver innehåll till dataminnet.
+;*           ANDI (And immediate)    : Bitvis multiplikation med en konstant.
+;*           SEI (Set Interrupt)     : Ettställer I-flaggan i statusregister SREG
+;*                                     för att aktivera avbrott globalt.
+;*           BREQ (Branch if equal)  : Genomför hopp till angiven adress om
+;*                                     resultatet från föregående aritmetiska
+;*                                     eller logiska operation blev noll.
+;*                                     Detta indikeras via Z-flaggan (Zero) i
+;*                                     statusregistret SREG, som då är ettställd.
 ;********************************************************************************/
 
 ; Makrodefinitioner:
